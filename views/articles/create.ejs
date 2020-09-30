@@ -1,0 +1,16 @@
+<%- include('../partials/header.ejs') %> 
+<%- include('../partials/navbar.ejs') %>
+
+    <div class="container" style="max-width: 45%;">
+        <form action="/articles/create" method="POST">
+            <label class="title is-size-6" style="color: hsl(171, 100%, 41%)" for="title">Article title:</label><br>
+            <input class="input is-rounded is-outlined mt-3 mb-3"type="text" name="title" id="title" required><br>
+            <label class="title is-size-6"style="color: hsl(171, 100%, 41%)" for="description">Article description:</label><br>
+            <input class="input is-rounded is-outlined mt-3 mb-3"type="text" name="description" id="description" required>
+            <label class="title is-size-6"style="color: hsl(171, 100%, 41%)" for="body">Article body:</label><br>
+            <textarea class="textarea is-rounded is-outlined has-text-gry-lighter is-small mt-3"name="markdown" id="markdown" cols="30" rows="10" required></textarea>
+            <button class="button is-rounded mt-3 is-outlined is-primary">Save</button>
+        </form>
+    </div>
+
+<%- include('../partials/footer.ejs') %> 
