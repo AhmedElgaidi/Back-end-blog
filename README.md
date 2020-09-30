@@ -11,7 +11,7 @@
   - method-override
   - dompurify + jsdom
 ## Features:
-- Handeling different pages (routes).
+- Handling different pages (routes).
 - Create, edit, delete blog.
 - Slug is written instead of normal ID.
 - Sanitize the inputs, to prevent XSS attacks.
