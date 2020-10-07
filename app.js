@@ -51,7 +51,7 @@ app.get('/', (req, res) => { // A middleware always run for every request
 app.use('/articles', articlesRoutes);// Article routes
 
 app.use('/about', (req, res) => { // handelling about page
-    res.render('about', { title: 'About Us' });
+    res.render('about', { title: 'Our page' });
 });
 
 app.use((req, res) => { // handelling 404 page
